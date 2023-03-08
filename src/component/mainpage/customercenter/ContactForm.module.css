@@ -1,0 +1,151 @@
+.title {
+  width: 100%;
+  background-color: var(--table-gray);
+  padding: 20px 20px;
+  border-top: 2px solid var(--dark-blue);
+  font-size: 24px;
+  font-weight: bold;
+  /* text-align: center; */
+  margin-bottom: 30px;
+  color: var(--dark-blue);
+  box-sizing: border-box;
+}
+.ContactForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0px calc(100% / 10); */
+  box-sizing: border-box;
+}
+.ContactFormTable {
+  width: 100%;
+}
+.ContactFormTable tr {
+  border-top: 1px solid var(--dark-blue);
+}
+.ContactFormTable tr:last-child {
+  border-bottom: 1px solid var(--dark-blue);
+}
+.ContactFormTable th {
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+  width: 18%;
+  padding-right: 20px;
+}
+.ContactFormTable td {
+  padding: 5px 0px;
+  vertical-align: middle;
+  width: 80%;
+}
+
+.ContactForm input {
+  width: 100%;
+  height: 1.8rem;
+  border: none;
+  box-sizing: border-box;
+  background-color: var(--light-gray);
+  border-left: 1px solid var(--dark-blue);
+  transition: background-color 0.3s ease;
+  border-radius: 0px;
+}
+
+.ContactForm input:focus {
+  border: 2px solid var(--dark-blue);
+  background-color: white;
+  border-radius: 0px;
+}
+
+.ContactForm textarea {
+  width: 100%;
+  height: 15rem;
+  resize: none;
+  border: none;
+  box-sizing: border-box;
+  background-color: var(--light-gray);
+  border-left: 1px solid var(--dark-blue);
+  transition: background-color 0.3s ease;
+  border-radius: 0px;
+}
+.ContactForm textarea:focus {
+  border: 2px solid var(--dark-blue);
+  background-color: white;
+}
+.ContactForm button {
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--light-blue);
+  border: none;
+  border-radius: 5px;
+}
+
+.checkbox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px;
+}
+.checkbox p {
+  margin-left: 20px;
+}
+.checkbox input[id='agree'] {
+  display: none;
+}
+.checkbox input[id='agree'] + label {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #707070;
+  background-color: white;
+  margin-left: 5px;
+}
+.checkbox input[id='agree']:checked + label::after {
+  position: absolute;
+  content: '✔';
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+.agreecheckbox {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-device-width: 586px) {
+  .title {
+    font-size: 18px;
+  }
+  .checkbox {
+    flex-direction: column;
+  }
+  .checkbox p {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  .ContactFormTable th {
+    width: 23%;
+    font-size: 14px;
+    padding-right: 0px;
+    text-align: center;
+  }
+  .checkbox input[id='agree'] + label {
+    width: 15px;
+    height: 15px;
+  }
+  .checkbox input[id='agree']:checked + label::after {
+    font-size: 15px;
+    width: 15px;
+    height: 15px;
+  }
+  .agreecheckbox {
+    margin-top: 10px;
+  }
+}

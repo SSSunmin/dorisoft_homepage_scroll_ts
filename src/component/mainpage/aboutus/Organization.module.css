@@ -1,0 +1,119 @@
+.Organization_Wrapper {
+  background-color: var(--white-gray);
+  padding: 80px 0px;
+}
+.Organization {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 80px;
+  padding-bottom: 150px; */
+}
+.Organization__title {
+  font-size: 4rem;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: bold;
+  /* padding: 100px 0px; */
+  /* color: rgb(59, 59, 59); */
+  color: var(--light-blue);
+  /* text-shadow: 2px 2px 4px rgb(100, 100, 100); */
+  text-shadow: 2px 2px 4px var(--light-blue);
+  /* margin-top: 50px; */
+}
+.imageContainer {
+  width: 1150px;
+  height: 916px;
+  position: relative;
+}
+.Organization img {
+  position: absolute;
+  width: 1150px;
+  height: 916px;
+  top: 0px;
+  opacity: 0;
+  transform: scale(0.9);
+}
+.imageContainer div {
+  position: absolute;
+  top: 359px;
+  left: 504px;
+  width: 215px;
+  height: 215px;
+  border-radius: 50%;
+}
+.Organization img:first-child {
+  opacity: 1;
+}
+.CEOAni {
+  animation: CEOAni 2s ease infinite;
+}
+.ApperarrowLine {
+  animation: ApperAni 1.5s forwards;
+}
+.Appeardepartment {
+  animation: ApperAni 1.5s forwards 0.75s;
+}
+.Appearcircle {
+  animation: ApperAni 1.5s forwards 1.5s;
+}
+.Appersubdepartment {
+  animation: ApperAni 1.5s forwards 3s;
+}
+.Apperarrow {
+  animation: ApperAni 1.5s forwards 2.25s;
+}
+@keyframes CEOAni {
+  0% {
+    box-shadow: 0px 0px 40px 20px rgba(124, 192, 186, 1);
+  }
+  50% {
+    box-shadow: 0px 0px 40px 20px rgba(1, 1, 1, 0);
+  }
+  100% {
+    box-shadow: 0px 0px 40px 20px rgba(124, 192, 186, 1);
+  }
+}
+
+@keyframes ApperAni {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-height: 750px) {
+  .Organization img {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-device-width: 586px) {
+  .Organization_Wrapper {
+    height: 300px;
+    background-color: var(--white-gray);
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+  .Organization {
+    height: 100%;
+    position: relative;
+  }
+  .Organization img {
+    width: 95%;
+    height: 95%;
+    transform: scale(1);
+  }
+  .imageContainer {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}

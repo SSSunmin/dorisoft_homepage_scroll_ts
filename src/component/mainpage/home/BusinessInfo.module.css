@@ -1,0 +1,134 @@
+.BusinessInfo {
+  width: 90%;
+  /* width: 100%; */
+  position: relative;
+  margin-top: 50px;
+}
+
+.BusinessInfo:last-child {
+  margin-bottom: 50px;
+}
+.center {
+  transform: scale(1.08);
+}
+.title {
+  margin-left: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--light-blue);
+}
+.subTitle {
+  font-weight: bold;
+  position: absolute;
+  color: white;
+  text-shadow: 4px 2px 10px black;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+}
+.CardList {
+  width: 100%;
+  margin-left: 0%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: all 1s ease;
+}
+.CardList__width {
+  width: 100%;
+  margin-left: 0px;
+}
+.img {
+  width: 700px;
+  height: 400px;
+  border-radius: 30px;
+}
+.notcentercard {
+  transform: scale(0.7);
+}
+.nextbtn svg {
+  width: 150%;
+  height: 150%;
+  color: gray;
+}
+.nextbtn::before {
+  background: none;
+  content: '';
+}
+.prevbtn svg {
+  width: 150%;
+  height: 150%;
+  color: gray;
+}
+.prevbtn::before {
+  background: none;
+  content: '';
+}
+/* Modal 안에 contents*/
+.Modal__Close {
+  position: absolute;
+  right: 0px;
+  margin: 10px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.Madal__image {
+  width: 100%;
+  height: 25rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.Modal__title {
+  margin: 25px;
+  font-size: 20px;
+}
+.Modal__Desc {
+  margin: 25px;
+  font-size: 16px;
+}
+.Modal__Desc p {
+  margin-bottom: 10px;
+}
+@media screen and (max-device-width: 586px) {
+  .subTitle {
+    font-size: 16px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .BusinessInfo {
+    display: flex;
+    justify-content: center;
+  }
+  .CardList {
+    width: 85vw;
+    padding: 0px;
+  }
+  .img {
+    width: 75vw;
+    height: 25vh;
+    border-radius: 15px;
+  }
+  .nextbtn svg {
+    width: 120%;
+    height: 120%;
+  }
+  .prevbtn svg {
+    width: 120%;
+    height: 120%;
+  }
+  .Madal__image {
+    width: 100%;
+    height: 35vh;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .Modal__title {
+    font-size: 18px;
+  }
+  .Modal__Desc {
+    font-size: 14px;
+  }
+}

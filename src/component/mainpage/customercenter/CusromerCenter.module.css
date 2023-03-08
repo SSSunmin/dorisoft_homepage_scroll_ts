@@ -1,0 +1,90 @@
+.CustomerCenter {
+  /* padding: 50px 50px; */
+  /* padding-bottom: 100px; */
+  /* margin-bottom: 30px; */
+  /* background-color: var(--light-gray); */
+  background-color: var(--white-gray);
+}
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ContactFormWrapper {
+  width: 100%;
+  background-color: var(--light-gray);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0px;
+}
+.ContactForm {
+  width: 60%;
+}
+.CustomerCenter > h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--dark-blue);
+  margin-bottom: 80px;
+}
+
+.mapContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  /* height: 450px; */
+  /* margin-bottom: 50px; */
+}
+.mapContainer > div {
+  width: 75%;
+}
+.mapContainer h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: var(--dark-blue);
+}
+.mapContainer h3 {
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  color: var(--dark-blue);
+}
+.map {
+  width: 100%;
+  height: 500px;
+  border: 2px solid rgb(207, 207, 207);
+  border-radius: 8px;
+  z-index: 0;
+}
+@media screen and (max-device-width: 586px) {
+  .mapContainer > div {
+    width: 85%;
+  }
+  .mapContainer h1 {
+    font-size: 18px;
+  }
+  .mapContainer h3 {
+    font-size: 14px;
+  }
+  .map {
+    width: 100%;
+    height: 300px;
+  }
+  .mapContainer {
+    margin-bottom: 50px;
+  }
+  .ContactFormWrapper {
+    padding: 30px 0px;
+  }
+  .ContactForm {
+    width: 85%;
+  }
+}

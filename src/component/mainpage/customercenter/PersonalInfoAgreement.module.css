@@ -1,0 +1,79 @@
+.Wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.PersonalInfoAgreement {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.Wrapper h1 {
+  width: 100%;
+  background-color: var(--table-gray);
+  font-size: 24px;
+  font-weight: bold;
+  /* text-align: center; */
+  color: var(--dark-blue);
+  padding: 20px 20px;
+  border-top: 2px solid var(--dark-blue);
+  box-sizing: border-box;
+}
+.PersonalInfoAgreement p {
+  margin: 15px 20px;
+  line-height: 2;
+}
+.PersonalInfoAgreement table {
+  width: 100%;
+  /* border-left: 1px solid black;
+  border-right: 1px solid black; */
+}
+.PersonalInfoAgreement tr {
+  height: 35px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.PersonalInfoAgreement tr:last-child {
+  border-bottom: 1px solid black;
+}
+.PersonalInfoAgreement th {
+  width: calc(100% / 3);
+  border-right: 1px solid black;
+  vertical-align: middle;
+  background-color: var(--table-gray);
+}
+
+.PersonalInfoAgreement td {
+  width: calc(100% / 3);
+  border-right: 1px solid black;
+  vertical-align: middle;
+  text-align: center;
+}
+.PersonalInfoAgreement th:last-child,
+.PersonalInfoAgreement td:last-child {
+  border-right: none;
+}
+.PersonalInfoAgreement td:last-child {
+  border-left: 1px solid black;
+}
+@media screen and (max-device-width: 586px) {
+  .Wrapper {
+    margin-top: 20px;
+  }
+  .Wrapper h1 {
+    font-size: 18px;
+  }
+  .PersonalInfoAgreement p {
+    font-size: 14px;
+  }
+  .PersonalInfoAgreement th {
+    font-size: 14px;
+  }
+  .PersonalInfoAgreement td {
+    font-size: 14px;
+  }
+}

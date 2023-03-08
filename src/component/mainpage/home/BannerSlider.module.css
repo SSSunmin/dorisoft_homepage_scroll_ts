@@ -1,0 +1,8 @@
+@media screen and (max-device-width: 586px) {
+  .BannerSlider {
+    height: 250px;
+  }
+  .image {
+    height: 250px;
+  }
+}

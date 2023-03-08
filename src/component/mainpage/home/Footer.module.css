@@ -1,0 +1,71 @@
+.Footer {
+  background-color: var(--very-light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.companyInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 70px;
+}
+.companyInfo p {
+  margin: 8px 0px;
+  color: rgb(116, 115, 115);
+}
+.text {
+  display: flex;
+}
+
+@media screen and (max-width: 1300px) {
+  .Footer {
+    width: 1300px;
+  }
+}
+@media screen and (max-device-width: 586px) {
+  .Footer {
+    width: 100vw;
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+  .companyInfo {
+    width: 75%;
+    padding: 0px 40px;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .companyInfo p {
+    font-size: 12px;
+  }
+  .companyInfo p:nth-child(2) {
+    color: rgb(153, 152, 152);
+  }
+  .label {
+    /* background-color: red; */
+    width: 95px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    text-align: start;
+  }
+  .text p {
+    color: rgb(153, 152, 152);
+  }
+  .text p:nth-child(2) {
+    width: 160px;
+  }
+  .centertext {
+    text-align: center;
+    margin-top: 20px !important ;
+  }
+  .centertext:first-child {
+    font-size: 14px;
+    font-weight: 800;
+  }
+  .companyInfo p[id='businesstype'] {
+    margin-top: 5px !important ;
+  }
+  .centertext:last-child {
+    color: rgb(153, 152, 152);
+  }
+}

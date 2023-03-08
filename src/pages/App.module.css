@@ -1,0 +1,40 @@
+.App {
+  width: 100%;
+  height: max-content;
+  background-color: var(--white-gray);
+  /* background-color: #f2f6f9; */
+}
+.App__contents {
+  margin-top: 85px;
+}
+.CardWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 50px 0px; */
+}
+.Title {
+  font-size: 28px;
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 80px;
+}
+@media screen and (max-width: 1300px) {
+  .App {
+    width: 1300px;
+  }
+}
+
+@media screen and (max-device-width: 586px) {
+  .App {
+    width: 100%;
+  }
+  .App__contents {
+    margin-top: 68px;
+  }
+  .CardWrapper {
+    height: 220px;
+    margin-bottom: 50px;
+  }
+}

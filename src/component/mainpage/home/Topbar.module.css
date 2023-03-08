@@ -1,0 +1,50 @@
+.Topbar {
+  width: calc(100% / 2);
+  margin: 0px 50px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu {
+  color: var(--dark-blue);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+  will-change: transform;
+  transition: transform 0.5s ease;
+}
+
+.menu:hover {
+  transform: scale(1.15);
+}
+
+.Bold {
+  transform: scale(1.15);
+}
+
+/* @media screen and (max-width: 1500px) and (min-width: 1151px) {
+  .Topbar {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .Topbar {
+    width: 50%;
+  }
+} */
+
+/* @media screen and (max-width: 400px) {
+  .menu {
+    font-size: 12px;
+  }
+} */
+
+@media screen and (max-device-width: 500px) {
+  .Topbar {
+    display: none;
+  }
+}
